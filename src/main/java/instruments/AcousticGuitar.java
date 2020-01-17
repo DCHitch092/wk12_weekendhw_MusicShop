@@ -6,10 +6,15 @@ import behaviours.ISell;
 public class AcousticGuitar extends Instrument implements ISell, IPlay {
 
     private int strings;
+    private double buyingPrice;
+    private double sellingPrice;
 
-    public AcousticGuitar(String colour, InstrumentType instrumentType, int strings) {
+
+    public AcousticGuitar(String colour, InstrumentType instrumentType, int strings, double buyingPrice, double sellingPrice) {
         super(colour, instrumentType);
         this.strings = strings;
+        this.buyingPrice = buyingPrice;
+        this.sellingPrice = sellingPrice;
     }
 
     public int getStrings(){
@@ -20,7 +25,15 @@ public class AcousticGuitar extends Instrument implements ISell, IPlay {
         return "dling!";
     }
 
-    public double calculateMarkup(double buyingPrice, double sellingPrice) {
-        return 0;
+    public double calculateMarkup() {
+        return sellingPrice - buyingPrice;
+    }
+
+    public double getBuyingPrice() {
+        return buyingPrice;
+    }
+
+    public double getSellingPrice() {
+        return sellingPrice;
     }
 }
