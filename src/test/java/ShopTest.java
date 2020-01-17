@@ -18,4 +18,9 @@ public class ShopTest {
         assertEquals("BeatHoven's", shop.getName());
     }
 
+    @Test
+    public void hasStock(){
+        assertEquals(0, shop.getStock().size());
+    }
+
 }
