@@ -22,7 +22,7 @@ public class ShopTest {
         shop = new Shop("BeatHoven's");
         moog = new MoogSynth ("Jet Black", InstrumentType.KEYBOARD, 49, 250, 350);
         guitar = new AcousticGuitar("oak brown", InstrumentType.STRING, 6, 100, 200);
-        sheetMusic = new SheetMusic(1,10, "Mozart's last pop album, written on paper to play")
+        sheetMusic = new SheetMusic(1,10, "Mozart's last pop album, written on paper to play");
     }
     
     @Test
@@ -56,6 +56,6 @@ public class ShopTest {
         shop.addStock(moog);
         shop.addStock(guitar);
         shop.addStock(sheetMusic);
-        assertEquals(209, shop.calculateStockTotalProfit());
+        assertEquals(209, shop.calculateStockTotalProfit(), 0.01);
     }
 }
