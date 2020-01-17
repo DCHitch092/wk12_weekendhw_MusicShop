@@ -10,7 +10,7 @@ public class SheetMusicTest {
 
     @Before
     public void before(){
-        sheetMusic = new SheetMusic(1,10, "Mozart's first requiem, not in guitar tab form");
+        sheetMusic = new SheetMusic(1,10, "Mozart's first requiem, now in guitar tab form");
     }
 
     @Test
@@ -25,11 +25,11 @@ public class SheetMusicTest {
 
     @Test
     public void hasDescription(){
-        assertEquals("Mozart's first requiem, not in guitar tab form)", sheetMusic.getDescription();
+        assertEquals("Mozart's first requiem, now in guitar tab form", sheetMusic.getDescription());
     }
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(9, sheetMusic.calculateMarkup());
+        assertEquals(9, sheetMusic.calculateMarkup(), 0.01);
     }
 }
