@@ -29,6 +29,10 @@ public class AcousticGuitar extends Instrument implements ISell, IPlay {
         return sellingPrice - buyingPrice;
     }
 
+    public String getDescription() {
+        return "a beautiful acoustic guitar";
+    }
+
     public double getBuyingPrice() {
         return buyingPrice;
     }

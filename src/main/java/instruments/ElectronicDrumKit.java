@@ -44,6 +44,10 @@ public class ElectronicDrumKit extends Instrument implements IElectric, IPlay, I
         return sellingPrice - buyingPrice;
     }
 
+    public String getDescription() {
+        return "well hot dog! It's an electronic drum kit - plug it in to make a nice sound";
+    }
+
     public double getBuyingPrice() {
         return buyingPrice;
     }
