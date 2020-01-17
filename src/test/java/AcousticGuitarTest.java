@@ -18,4 +18,10 @@ public class AcousticGuitarTest {
     public void hasColour(){
         assertEquals("oak brown", acousticGuitar.getColour());
     }
+
+    @Test
+    public void hasInstrumentType(){
+        assertEquals(InstrumentType.STRING, acousticGuitar.getInstrumentType());
+
+    }
 }
