@@ -49,5 +49,4 @@ public class AcousticGuitarTest {
         assertEquals("dling!", acousticGuitar.play());
     }
 
-
 }
