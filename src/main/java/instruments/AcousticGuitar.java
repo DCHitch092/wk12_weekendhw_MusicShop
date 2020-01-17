@@ -12,6 +12,10 @@ public class AcousticGuitar extends Instrument implements ISell, IPlay {
         this.strings = strings;
     }
 
+    public int getStrings(){
+        return strings;
+    };
+
     public String play() {
         return "dling!";
     }
