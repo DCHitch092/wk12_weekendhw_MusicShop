@@ -1,4 +1,7 @@
 package instruments;
 
-public class Instrument {
+public abstract class Instrument {
+
+    private String colour;
+    private InstrumentType instrumentType;
 }
