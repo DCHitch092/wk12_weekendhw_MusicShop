@@ -44,8 +44,10 @@ public class AcousticGuitarTest {
         assertEquals(100, acousticGuitar.calculateMarkup(), 0.01 );
     }
 
-
-
+    @Test
+    public void canPlay(){
+        assertEquals("dling!", acousticGuitar.play());
+    }
 
 
 }
