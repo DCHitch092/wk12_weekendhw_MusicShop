@@ -4,6 +4,7 @@ import behaviours.ISell;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Shop {
 
@@ -18,6 +19,9 @@ public class Shop {
     public String getName() {
         return name;
     }
-//
-//    public ArrayList<ISell> getStock()
+
+    public ArrayList<ISell> getStock() {
+        return new ArrayList<ISell>(stock);
+    }
+
 }
