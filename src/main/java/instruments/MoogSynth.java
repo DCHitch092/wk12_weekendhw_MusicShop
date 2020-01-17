@@ -26,7 +26,7 @@ public class MoogSynth extends Instrument implements IPlay, IElectric, ISell {
     }
 
     public void unplug() {
-        if (pluggedIn != true){
+        if (pluggedIn = true){
             pluggedIn = false;
         }
     }
