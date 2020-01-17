@@ -21,8 +21,6 @@ public class ShopTest {
         moog = new MoogSynth ("Jet Black", InstrumentType.KEYBOARD, 49, 250, 350);
         guitar = new AcousticGuitar("oak brown", InstrumentType.STRING, 6, 100, 200);
     }
-
-}
     
     @Test
     public void hasName(){
