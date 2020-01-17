@@ -1,6 +1,7 @@
 package shop;
 
 import behaviours.ISell;
+import instruments.MoogSynth;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -24,4 +25,7 @@ public class Shop {
         return new ArrayList<ISell>(stock);
     }
 
+    public void addStock(ISell item) {
+        stock.add(item);
+    }
 }

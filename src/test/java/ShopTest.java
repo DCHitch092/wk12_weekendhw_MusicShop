@@ -1,3 +1,4 @@
+import behaviours.ISell;
 import instruments.InstrumentType;
 import instruments.MoogSynth;
 import org.junit.Before;
@@ -9,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class ShopTest {
 
     Shop shop;
-    MoogSynth moog;
+    ISell moog;
 
     @Before
     public void before(){
