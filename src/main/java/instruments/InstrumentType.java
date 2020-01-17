@@ -4,6 +4,6 @@ public enum InstrumentType {
     BRASS,
     STRING,
     PERCUSSION,
-    WOODWIND;
-
+    WOODWIND,
+    KEYBOARD;
 }
