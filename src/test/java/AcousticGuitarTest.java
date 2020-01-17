@@ -22,6 +22,13 @@ public class AcousticGuitarTest {
     @Test
     public void hasInstrumentType(){
         assertEquals(InstrumentType.STRING, acousticGuitar.getInstrumentType());
-
     }
+
+    @Test
+    public void hasStrings(){
+        assertEquals(6, acousticGuitar.getStrings());
+    }
+
+
+
 }
