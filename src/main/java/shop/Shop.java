@@ -1,11 +1,7 @@
 package shop;
 
 import behaviours.ISell;
-import instruments.MoogSynth;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Shop {
 
