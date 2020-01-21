@@ -11,7 +11,8 @@ public class AcousticGuitarTest {
     AcousticGuitar acousticGuitar;
     @Before
     public void before(){
-        acousticGuitar = new AcousticGuitar("oak brown", InstrumentType.STRING, 6, 100, 200);
+        acousticGuitar = new AcousticGuitar("oak brown",
+                InstrumentType.STRING, 6, 100, 200);
     }
 
     @Test
@@ -47,6 +48,11 @@ public class AcousticGuitarTest {
     @Test
     public void canPlay(){
         assertEquals("dling!", acousticGuitar.play());
+    }
+
+    @Test
+    public void canGetDescription() {
+        assertEquals("a beautiful oak brown acoustic guitar", acousticGuitar.getDescription());
     }
 
 }
